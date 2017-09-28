@@ -1,6 +1,11 @@
 GO1 Tools
 ====
 
+# Required Dependencies
+
+  - http: `brew install http`
+  - jq: `brew install jq`
+
 # Install service
 
 ```
