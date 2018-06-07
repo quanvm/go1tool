@@ -1,33 +1,39 @@
 GO1 Tools
 ====
 
-# Required Dependencies
+# Required dependencies
 
   - http: `brew install http`
   - jq: `brew install jq`
 
 # Install service
 
+- Create your aliases
+
 ```
-./install.sh API_URL SERVICE_NAME
+alias go1_install_local="your_path/install.sh local"
+alias go1_install_dev="your_path/install.sh dev"
+alias go1_install_prod="your_path/install.sh prod"
+```
+
+- Install/Update
+
+```
+go1_install_local SERVICE
 ```
 
 # Create MR
-
-## Work MR
-
-```
-./mr.sh SERVICE_NAME source_branch target_branch title assignee_id
-```
-
-## Deploy staging
+- Create your aliases
 
 ```
-./mr_staging.sh SERVICE_NAME1 SERVICE_NAME2 SERVICE_NAME3
+alias go1_mr="your_path/mr.sh"
 ```
 
-## Deploy production
+- Commit and push your work to remote
+- Create MR
 
 ```
-./mr_prod.sh SERVICE_NAME1 SERVICE_NAME2 SERVICE_NAME3
+quanvo@quan-vo:~/Documents/go1/monolith/php/user|GO1P-19375⚡ 
+⇒  go1_mr "GO1P-19375 System can create the virtual account without throwing errors"
+https://code.go1.com.au/microservices/user/merge_requests/785
 ```
