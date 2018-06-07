@@ -29,7 +29,10 @@ go1_install_local SERVICE
 alias go1_mr="your_path/mr.sh"
 ```
 
+- Add gitlab token https://github.com/quanvm/go1tool/blob/master/mr.sh#L35
+
 - Commit and push your work to remote
+
 - Create MR
 
 ```
